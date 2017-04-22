@@ -68,6 +68,12 @@ app.get('/about', (req, res) => {
    });
 });
 
+app.get('/project', (req, res) => {
+   res.render('project.hbs', {
+      pageTitle: 'Projects Page'
+   });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Bad Gateway Or Some Shyt Like That...'
